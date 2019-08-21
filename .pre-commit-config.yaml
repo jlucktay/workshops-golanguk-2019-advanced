@@ -7,8 +7,8 @@ repos:
 - repo: git://github.com/pre-commit/pre-commit-hooks
   rev: v2.3.0
   hooks:
-  # # Prevent giant files from being committed
-  # - id: check-added-large-files
+  # Prevent giant files from being committed
+  - id: check-added-large-files
   # Forbid files which have a UTF-8 byte-order marker
   - id: check-byte-order-marker
   # Check for files that would conflict in case-insensitive filesystems
@@ -46,9 +46,9 @@ repos:
   # This hook trims trailing whitespace.
   - id: trailing-whitespace
 
-# # https://github.com/golangci/golangci-lint/blob/master/.pre-commit-hooks.yaml
-# - repo: git://github.com/golangci/golangci-lint
-#   rev: v1.17.1
-#   hooks:
-#   - id: golangci-lint
-#     args: [ '--enable-all' ]
+# https://github.com/golangci/golangci-lint/blob/master/.pre-commit-hooks.yaml
+- repo: git://github.com/golangci/golangci-lint
+  rev: v1.17.1
+  hooks:
+  - id: golangci-lint
+    args: [ '--enable-all' ]
