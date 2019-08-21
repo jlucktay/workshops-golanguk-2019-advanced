@@ -1,0 +1,2 @@
+BenchmarkFib-8   	   30000	     43666 ns/op
+PASS

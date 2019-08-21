@@ -1,0 +1,2 @@
+name   old time/op  new time/op  delta
+Fib-8  41.3µs ± 1%   0.0µs ± 5%  -99.98%  (p=0.000 n=18+20)

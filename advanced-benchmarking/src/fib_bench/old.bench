@@ -1,0 +1,25 @@
+goos: darwin
+goarch: amd64
+pkg: github.com/gopherguides/training/advanced/benchmarking/src/fib
+BenchmarkFib-8   	   30000	     41110 ns/op
+BenchmarkFib-8   	   30000	     41547 ns/op
+BenchmarkFib-8   	   30000	     41176 ns/op
+BenchmarkFib-8   	   30000	     41144 ns/op
+BenchmarkFib-8   	   30000	     41201 ns/op
+BenchmarkFib-8   	   30000	     41158 ns/op
+BenchmarkFib-8   	   30000	     41425 ns/op
+BenchmarkFib-8   	   30000	     41339 ns/op
+BenchmarkFib-8   	   30000	     41258 ns/op
+BenchmarkFib-8   	   30000	     41945 ns/op
+BenchmarkFib-8   	   30000	     41332 ns/op
+BenchmarkFib-8   	   30000	     41733 ns/op
+BenchmarkFib-8   	   30000	     41236 ns/op
+BenchmarkFib-8   	   30000	     41351 ns/op
+BenchmarkFib-8   	   30000	     42686 ns/op
+BenchmarkFib-8   	   30000	     41382 ns/op
+BenchmarkFib-8   	   30000	     41118 ns/op
+BenchmarkFib-8   	   30000	     41125 ns/op
+BenchmarkFib-8   	   30000	     41248 ns/op
+BenchmarkFib-8   	   30000	     41316 ns/op
+PASS
+ok  	github.com/gopherguides/training/advanced/benchmarking/src/fib	33.211s

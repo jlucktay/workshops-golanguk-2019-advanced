@@ -1,0 +1,3 @@
+BenchmarkSum-8   	2000000000	         0.29 ns/op
+PASS
+ok  	github.com/gopherguides/training/fundamentals/benchmarking/src/optimization/original	0.605s
