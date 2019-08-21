@@ -7,14 +7,16 @@ import (
 	"time"
 )
 
-// section: template
 type Numbers struct {
 	// Add a sync.RWMutex
+	rwm  sync.RWMutex
 	data map[int]int
 }
 
 func (f *Numbers) Find(key int) (int, error) {
 	// Protect this with a read lock
+	f.rwm.RLock()
+	defer f.rwm.RUnlock()
 	k, ok := f.data[key]
 	if !ok {
 		return 0, fmt.Errorf("number not found: %d", key)
@@ -26,8 +28,10 @@ func (f *Numbers) Load() {
 	var i int
 	for {
 		// Protect this with a write lock
+		f.rwm.Lock()
 		f.data[i] = i
 		i++
+		f.rwm.Unlock()
 		randomSleep(75) // simulate real world load
 	}
 }
@@ -63,9 +67,7 @@ func main() {
 	wg.Wait()
 }
 
-// section: template
-
+// randomSleep will sleep for a random amount of time (up to 'i' milliseconds) to add "chaos".
 func randomSleep(i int) {
-	// sleep for a random amount of time to add "chaos"
 	time.Sleep(time.Duration(rand.Intn(i)) * time.Millisecond)
 }
