@@ -45,6 +45,7 @@ func withStringBuilder(x string) string {
 	return bb.String()
 }
 
+//nolint
 var sink string
 
 func BenchmarkWithPlus(b *testing.B) {
