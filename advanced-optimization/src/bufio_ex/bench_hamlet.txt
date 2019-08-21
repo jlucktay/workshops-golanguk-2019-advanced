@@ -1,0 +1,15 @@
+goos: darwin
+goarch: amd64
+pkg: github.com/gopherguides/learn/_training/advanced/optimization/src/bufio_ex
+BenchmarkHamletUnbuffered-8   	  500000	      3187 ns/op	   32768 B/op	       1 allocs/op
+BenchmarkHamletUnbuffered-8   	  300000	      3361 ns/op	   32768 B/op	       1 allocs/op
+BenchmarkHamletUnbuffered-8   	  500000	      3285 ns/op	   32768 B/op	       1 allocs/op
+BenchmarkHamletUnbuffered-8   	  300000	      3417 ns/op	   32768 B/op	       1 allocs/op
+BenchmarkHamletUnbuffered-8   	  300000	      3446 ns/op	   32768 B/op	       1 allocs/op
+BenchmarkHamletBuffered-8     	20000000	        61.7 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHamletBuffered-8     	20000000	        62.4 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHamletBuffered-8     	20000000	        62.5 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHamletBuffered-8     	20000000	        63.0 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHamletBuffered-8     	20000000	        63.2 ns/op	       0 B/op	       0 allocs/op
+PASS
+ok  	github.com/gopherguides/learn/_training/advanced/optimization/src/bufio_ex	45.203s

@@ -1,0 +1,15 @@
+goos: darwin
+goarch: amd64
+pkg: github.com/gopherguides/learn/_training/advanced/optimization/src/solution_1
+BenchmarkWords         	       2	 507054919 ns/op	 1890544 B/op	  289791 allocs/op
+BenchmarkWords         	       2	 501602349 ns/op	 1892880 B/op	  289797 allocs/op
+BenchmarkWords         	       3	 513866574 ns/op	 1888314 B/op	  289782 allocs/op
+BenchmarkWords         	       2	 504580988 ns/op	 1891344 B/op	  289789 allocs/op
+BenchmarkWords         	       2	 509582871 ns/op	 1892008 B/op	  289794 allocs/op
+BenchmarkWords         	       2	 515661663 ns/op	 1892288 B/op	  289796 allocs/op
+BenchmarkWords         	       2	 512215245 ns/op	 1891048 B/op	  289789 allocs/op
+BenchmarkWords         	       2	 515254855 ns/op	 1887416 B/op	  289774 allocs/op
+BenchmarkWords         	       2	 526320707 ns/op	 1888568 B/op	  289774 allocs/op
+BenchmarkWords         	       2	 534406640 ns/op	 1888952 B/op	  289783 allocs/op
+PASS
+ok  	github.com/gopherguides/learn/_training/advanced/optimization/src/solution_1	16.898s

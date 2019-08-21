@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Performance Result Comparison</title>
+<style>
+.benchstat { border-collapse: collapse; }
+.benchstat th:nth-child(1) { text-align: left; }
+.benchstat tbody td:nth-child(1n+2):not(.note) { text-align: right; padding: 0em 1em; }
+.benchstat tr:not(.configs) th { border-top: 1px solid #666; border-bottom: 1px solid #ccc; }
+.benchstat .nodelta { text-align: center !important; }
+.benchstat .better td.delta { font-weight: bold; }
+.benchstat .worse td.delta { font-weight: bold; color: #c00; }
+</style>
+</head>
+<body>
+
+<table class='benchstat oldnew'>
+<tr class='configs'><th><th>original.bench<th>bufio_bytes_readbuff.bench
+
+
+<tbody>
+<tr><th><th colspan='2' class='metric'>time/op<th>delta
+<tr class='better'><td>Words<td>512ms ± 3%<td>9ms ± 1%<td class='delta'>−98.27%<td class='note'>(p=0.000 n=9&#43;10)
+<tr><td>&nbsp;
+</tbody>
+
+<tbody>
+<tr><th><th colspan='2' class='metric'>alloc/op<th>delta
+<tr class='better'><td>Words<td>1.89MB ± 0%<td>1.24MB ± 0%<td class='delta'>−34.16%<td class='note'>(p=0.000 n=10&#43;10)
+<tr><td>&nbsp;
+</tbody>
+
+<tbody>
+<tr><th><th colspan='2' class='metric'>allocs/op<th>delta
+<tr class='better'><td>Words<td>290k ± 0%<td>25k ± 0%<td class='delta'>−91.23%<td class='note'>(p=0.000 n=10&#43;10)
+<tr><td>&nbsp;
+</tbody>
+
+</table>
+</body>
+</html>

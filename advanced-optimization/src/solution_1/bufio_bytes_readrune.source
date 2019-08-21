@@ -1,0 +1,12 @@
+Total:     1146897    1146897 (flat, cum) 48.05%
+      4            .          .           	"io" 
+      5            .          .           ) 
+      6            .          .            
+      7            .          .           // section: readRune 
+      8            .          .           func readRune(r io.Reader) (rune, error) { 
+      9      1146897    1146897           	var buf [1]byte 
+     10            .          .           	_, err := r.Read(buf[:]) 
+     11            .          .           	return rune(buf[0]), err 
+     12            .          .           } 
+     13            .          .            
+     14            .          .           // section: readRune 

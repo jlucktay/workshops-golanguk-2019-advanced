@@ -1,0 +1,389 @@
+./logger.go:51:14: &textFormatter literal escapes to heap
+./logger.go:52:3: &textFormatter literal escapes to heap
+./logger.go:54:22: logrusWrapper literal escapes to heap
+./logger.go:54:23: l escapes to heap
+./logger.go:49:17: &logrus.Logger literal escapes to heap
+./logger.go:49:17: io.Writer(os.Stderr) escapes to heap
+./logger.go:49:17: logrus.Formatter(new(logrus.TextFormatter)) escapes to heap
+./logger.go:49:17: new(logrus.TextFormatter) escapes to heap
+./logger.go:49:17: make(logrus.LevelHooks) escapes to heap
+./options.go:97:54: envAddr escapes to heap
+./options.go:97:80: envy.Get("PORT", "3000") escapes to heap
+./options.go:101:28: []PreWare literal escapes to heap
+./options.go:104:36: []http.Handler literal escapes to heap
+./options.go:108:36: "context".Context("context".background) escapes to heap
+./options.go:141:21: sessions.NewCookieStore(([]byte)(secret)) escapes to heap
+./options.go:146:15: w escapes to heap
+./options.go:116:12: func literal escapes to heap
+./options.go:116:12: func literal escapes to heap
+./options.go:118:9: &opts escapes to heap
+./options.go:138:17: "Unless you set SESSION_SECRET env variable, your session storage is not protected!" escapes to heap
+./options.go:141:53: ([]byte)(secret) escapes to heap
+./options.go:145:12: opts.Logger escapes to heap
+./options.go:149:101: envy.Get("PORT", "3000") escapes to heap
+./options.go:121:42: i + 1 escapes to heap
+./options.go:127:11: s escapes to heap
+./session.go:64:3: &Session literal escapes to heap
+./route.go:125:14: sort.Interface(sort.StringSlice(sort.a)) escapes to heap
+./route.go:103:18: []string literal escapes to heap
+./route.go:134:52: url.QueryEscape(k) escapes to heap
+./route.go:134:72: url.QueryEscape(pendingParams[k]) escapes to heap
+./route.go:118:15: path + "?" escapes to heap
+./route.go:121:16: path + "&" escapes to heap
+./route.go:134:15: path + fmt.Sprintf(format, url.QueryEscape(k), url.QueryEscape(pendingParams[k])) escapes to heap
+./route.go:82:9: func literal escapes to heap
+./route.go:82:9: func literal escapes to heap
+./route.go:83:20: []string literal escapes to heap
+./route.go:91:61: cRoute.Path escapes to heap
+./route.go:91:25: error(&"errors".errorString literal) escapes to heap
+./route.go:91:25: &"errors".errorString literal escapes to heap
+./flash.go:53:31: &result.data escapes to heap
+./flash.go:53:31: &result.data escapes to heap
+./flash.go:48:3: &Flash literal escapes to heap
+./flash.go:48:28: map[string][]string literal escapes to heap
+./handler.go:38:13: []string literal escapes to heap
+./handler.go:41:25: ws escapes to heap
+./handler.go:45:3: a escapes to heap
+./handler.go:46:3: a.Options.Env escapes to heap
+./handler.go:47:3: a.Routes() escapes to heap
+./handler.go:48:3: info escapes to heap
+./handler.go:49:3: req.URL.Path escapes to heap
+./handler.go:50:3: ct escapes to heap
+./handler.go:51:3: req.Method escapes to heap
+./handler.go:56:32: cRoute.BuildPathHelper() escapes to heap
+./handler.go:68:3: &DefaultContext literal escapes to heap
+./handler.go:68:3: &DefaultContext literal escapes to heap
+./handler.go:60:27: "context".Context("context".background) escapes to heap
+./handler.go:62:3: ws escapes to heap
+./handler.go:44:39: map[string]interface {} literal escapes to heap
+./app.go:53:27: notFoundHandler("path not found: %s %s", 404) escapes to heap
+./app.go:45:21: func literal escapes to heap
+./app.go:42:3: &App literal escapes to heap
+./app.go:34:33: &MiddlewareStack literal escapes to heap
+./app.go:34:33: map[string]bool literal escapes to heap
+./app.go:35:31: composite literal escapes to heap
+./app.go:39:26: &mux.Router literal escapes to heap
+./app.go:39:26: make(map[string]*mux.Route) escapes to heap
+./app.go:40:13: &sync.Mutex literal escapes to heap
+./app.go:41:22: composite literal escapes to heap
+./app.go:42:19: []*App literal escapes to heap
+./app.go:54:35: notFoundHandler("method not found: %s %s", 405) escapes to heap
+./app.go:59:9: a.PanicHandler escapes to heap
+./app.go:48:36: req.Method escapes to heap
+./app.go:48:52: req.URL.Path escapes to heap
+./app.go:46:10: func literal escapes to heap
+./app.go:46:10: func literal escapes to heap
+./default_context.go:52:10: d.params escapes to heap
+./default_context.go:63:17: d.params escapes to heap
+./default_context.go:89:30: &Cookies literal escapes to heap
+./flash.go:40:24: f.data escapes to heap
+./flash.go:41:13: flashKey escapes to heap
+./flash.go:41:13: b escapes to heap
+./default_context.go:184:42: args escapes to heap
+./default_context.go:190:43: args escapes to heap
+./default_context.go:194:38: strings.TrimSuffix(url, "()") escapes to heap
+./default_context.go:196:42: url escapes to heap
+./default_context.go:184:27: error(&"github.com/pkg/errors".withStack literal) escapes to heap
+./default_context.go:184:27: &"github.com/pkg/errors".withStack literal escapes to heap
+./default_context.go:190:28: error(&"github.com/pkg/errors".withStack literal) escapes to heap
+./default_context.go:190:28: &"github.com/pkg/errors".withStack literal escapes to heap
+./default_context.go:196:27: error(&"github.com/pkg/errors".withStack literal) escapes to heap
+./default_context.go:196:27: &"github.com/pkg/errors".withStack literal escapes to heap
+./default_context.go:200:27: error(&"github.com/pkg/errors".withStack literal) escapes to heap
+./default_context.go:200:27: &"github.com/pkg/errors".withStack literal escapes to heap
+./default_context.go:113:18: pp escapes to heap
+./default_context.go:109:26: map[string]string literal escapes to heap
+./default_context.go:114:17: (*Flash)(~r0).data escapes to heap
+./default_context.go:115:19: d.Session() escapes to heap
+./default_context.go:116:19: d.Request() escapes to heap
+./default_context.go:117:18: status escapes to heap
+./default_context.go:120:19: bb escapes to heap
+./default_context.go:118:9: &bytes.Buffer literal escapes to heap
+./default_context.go:129:19: map[string][]string literal escapes to heap
+./default_context.go:133:28: []string literal escapes to heap
+./default_context.go:135:54: (interface {})(pop.p) escapes to heap
+./default_context.go:135:54: string(pop.b·3) escapes to heap
+./default_context.go:135:29: []string literal escapes to heap
+./default_context.go:138:30: d.Response() escapes to heap
+./default_context.go:138:30: bb escapes to heap
+./default_context.go:105:34: time.Since(start) escapes to heap
+./default_context.go:125:20: composite literal escapes to heap
+./default_context.go:125:57: error(&"github.com/pkg/errors".withStack literal) escapes to heap
+./default_context.go:125:57: &"github.com/pkg/errors".withStack literal escapes to heap
+./default_context.go:140:20: composite literal escapes to heap
+./default_context.go:140:57: error(&"github.com/pkg/errors".withStack literal) escapes to heap
+./default_context.go:140:57: &"github.com/pkg/errors".withStack literal escapes to heap
+./default_context.go:173:18: composite literal escapes to heap
+./default_context.go:173:58: error(&"github.com/pkg/errors".withStack literal) escapes to heap
+./default_context.go:173:58: &"github.com/pkg/errors".withStack literal escapes to heap
+./default_context.go:219:12: make([]string, 0, len(d.data)) escapes to heap
+./default_context.go:223:32: k escapes to heap
+./default_context.go:226:14: sort.Interface(sort.StringSlice(sort.a)) escapes to heap
+./default_context.go:242:30: error(&"github.com/pkg/errors".withStack literal) escapes to heap
+./default_context.go:242:30: &"github.com/pkg/errors".withStack literal escapes to heap
+./errors.go:54:9: func literal escapes to heap
+./errors.go:54:9: func literal escapes to heap
+./errors.go:61:28: error(&"github.com/pkg/errors".withStack literal) escapes to heap
+./errors.go:61:28: &"github.com/pkg/errors".withStack literal escapes to heap
+./errors.go:63:28: error(&"github.com/pkg/errors".withStack literal) escapes to heap
+./errors.go:63:28: &"github.com/pkg/errors".withStack literal escapes to heap
+./errors.go:63:39: error(&"github.com/pkg/errors".fundamental literal) escapes to heap
+./errors.go:63:39: &"github.com/pkg/errors".fundamental literal escapes to heap
+./errors.go:65:22: error(&"github.com/pkg/errors".fundamental literal) escapes to heap
+./errors.go:65:22: &"github.com/pkg/errors".fundamental literal escapes to heap
+./errors.go:77:16: ([]byte)(prodNotFoundTmpl) escapes to heap
+./errors.go:80:15: ([]byte)(prodErrorTmpl) escapes to heap
+./errors.go:84:17: "env" escapes to heap
+./errors.go:86:18: origErr escapes to heap
+./errors.go:90:45: ([]byte)(prodNotFoundTmpl) escapes to heap
+./errors.go:90:45: ([]byte)(prodErrorTmpl) escapes to heap
+./errors.go:95:21: origErr escapes to heap
+./errors.go:100:4: msg escapes to heap
+./errors.go:101:4: status escapes to heap
+./errors.go:99:36: c.Response() escapes to heap
+./errors.go:99:69: map[string]interface {} literal escapes to heap
+./errors.go:99:69: map[string]interface {} literal escapes to heap
+./errors.go:109:41: err.Error() escapes to heap
+./errors.go:109:41: msg escapes to heap
+./errors.go:111:21: "routes" escapes to heap
+./errors.go:118:4: msg escapes to heap
+./errors.go:119:4: status escapes to heap
+./errors.go:120:4: c.Data() escapes to heap
+./errors.go:121:4: c.Params() escapes to heap
+./errors.go:122:4: c.Request().Form escapes to heap
+./errors.go:123:4: c escapes to heap
+./errors.go:124:4: inspectHeaders(c.Request().Header) escapes to heap
+./errors.go:125:4: func literal escapes to heap
+./errors.go:125:15: func literal escapes to heap
+./errors.go:125:15: func literal escapes to heap
+./errors.go:116:33: map[string]interface {} literal escapes to heap
+./errors.go:135:28: ([]byte)(t) escapes to heap
+./errors.go:104:27: error(&"github.com/pkg/errors".withStack literal) escapes to heap
+./errors.go:104:27: &"github.com/pkg/errors".withStack literal escapes to heap
+./errors.go:132:27: error(&"github.com/pkg/errors".withStack literal) escapes to heap
+./errors.go:132:27: &"github.com/pkg/errors".withStack literal escapes to heap
+./errors.go:145:12: make([]string, 0, len(i)) escapes to heap
+./errors.go:148:31: k escapes to heap
+./errors.go:148:31: v escapes to heap
+./errors.go:150:14: sort.Interface(sort.StringSlice(sort.a)) escapes to heap
+./flash.go:20:30: map[string][]string literal escapes to heap
+./flash.go:31:25: []string literal escapes to heap
+./grifts.go:61:22: func literal escapes to heap
+./grifts.go:61:22: func literal escapes to heap
+./grifts.go:63:27: os.Stdout escapes to heap
+./grifts.go:64:15: w escapes to heap
+./grifts.go:63:27: new(tabwriter.Writer) escapes to heap
+./grifts.go:64:19: "METHOD\t PATH\t ALIASES\t NAME\t HANDLER" escapes to heap
+./grifts.go:65:15: w escapes to heap
+./grifts.go:65:19: "------\t ----\t -------\t ----\t -------" escapes to heap
+./grifts.go:67:15: w escapes to heap
+./grifts.go:67:48: r.Method escapes to heap
+./grifts.go:67:58: r.Path escapes to heap
+./grifts.go:67:77: strings.Join(r.Aliases, " ") escapes to heap
+./grifts.go:67:96: r.PathName escapes to heap
+./grifts.go:67:108: r.HandlerName escapes to heap
+./middleware.go:143:14: keyMapMutex escapes to heap
+./middleware.go:145:15: keyMapMutex escapes to heap
+./middleware.go:149:14: keyMapMutex escapes to heap
+./middleware.go:151:14: keyMapMutex escapes to heap
+./middleware.go:153:14: keyMapMutex escapes to heap
+./middleware.go:41:24: m escapes to heap
+./grifts.go:52:25: a.Options.Name escapes to heap
+./grifts.go:52:12: io.Writer(os.Stdout) escapes to heap
+./grifts.go:53:12: io.Writer(os.Stdout) escapes to heap
+./grifts.go:53:40: a.Middleware.String() escapes to heap
+./grifts.go:45:26: func literal escapes to heap
+./grifts.go:45:26: func literal escapes to heap
+./grifts.go:25:22: func literal escapes to heap
+./grifts.go:25:22: func literal escapes to heap
+./grifts.go:26:15: []byte literal escapes to heap
+./grifts.go:38:14: io.Writer(os.Stdout) escapes to heap
+./grifts.go:38:16: s[:127] escapes to heap
+./grifts.go:37:24: randx.String(6) + string(bb) escapes to heap
+./grifts.go:31:28: error(&"github.com/pkg/errors".withStack literal) escapes to heap
+./grifts.go:31:28: &"github.com/pkg/errors".withStack literal escapes to heap
+./middleware.go:113:18: mw escapes to heap
+./middleware.go:113:18: info escapes to heap
+./middleware.go:104:9: func literal escapes to heap
+./middleware.go:104:9: func literal escapes to heap
+./middleware.go:105:11: &h escapes to heap
+./middleware.go:108:29: []MiddlewareFunc literal escapes to heap
+./handler.go:94:18: err escapes to heap
+./handler.go:96:29: ([]byte)(err.Error()) escapes to heap
+./logger.go:34:22: logrusWrapper literal escapes to heap
+./logger.go:34:46: l.FieldLogger.WithField(s, i) escapes to heap
+./logger.go:38:22: logrusWrapper literal escapes to heap
+./logger.go:38:47: l.FieldLogger.WithFields(m) escapes to heap
+./logger_formatter.go:43:38: os.f.file.pfd escapes to heap
+./logger_formatter.go:145:29: stringVal escapes to heap
+./logger_formatter.go:103:13: b escapes to heap
+./logger_formatter.go:103:17: levelColor escapes to heap
+./logger_formatter.go:103:17: levelText escapes to heap
+./logger_formatter.go:103:82: entry.Time.Format(defaultTimestampFormat) escapes to heap
+./logger_formatter.go:106:14: b escapes to heap
+./logger_formatter.go:106:30: entry.Message escapes to heap
+./logger_formatter.go:111:14: b escapes to heap
+./logger_formatter.go:111:18: levelColor escapes to heap
+./logger_formatter.go:111:18: k escapes to heap
+./logger_formatter.go:54:14: make([]string, 0, len(entry.Data)) escapes to heap
+./logger_formatter.go:59:14: sort.Interface(sort.StringSlice(sort.a)) escapes to heap
+./logger_formatter.go:68:3: f.Once escapes to heap
+./logger_formatter.go:63:7: &bytes.Buffer literal escapes to heap
+./logger_formatter.go:75:50: entry.Level.String() escapes to heap
+./logger_formatter.go:77:36: entry.Message escapes to heap
+./middleware.go:48:25: map[string]bool literal escapes to heap
+./middleware.go:48:25: &MiddlewareStack literal escapes to heap
+./middleware.go:60:29: []MiddlewareFunc literal escapes to heap
+./middleware.go:61:28: map[string]bool literal escapes to heap
+./middleware.go:81:17: mw escapes to heap
+./middleware.go:81:17: h escapes to heap
+./middleware.go:89:16: mw1 escapes to heap
+./middleware.go:92:13: mw escapes to heap
+./middleware.go:90:27: []MiddlewareFunc literal escapes to heap
+./middleware.go:130:3: &MiddlewareStack literal escapes to heap
+./middleware.go:130:25: map[string]bool literal escapes to heap
+./middleware.go:175:13: keyMapMutex escapes to heap
+./middleware.go:177:13: keyMapMutex escapes to heap
+./request_logger.go:22:9: func literal escapes to heap
+./request_logger.go:22:9: func literal escapes to heap
+./request_logger.go:26:20: "requestor_id" escapes to heap
+./request_logger.go:25:9: randx.String(10) escapes to heap
+./request_logger.go:30:9: rid escapes to heap
+./request_logger.go:29:30: irid.(string) + "-" + randx.String(10) escapes to heap
+./request_logger.go:31:14: rid escapes to heap
+./request_logger.go:39:16: ct escapes to heap
+./request_logger.go:42:5: req.Method escapes to heap
+./request_logger.go:43:5: req.URL.String() escapes to heap
+./request_logger.go:44:5: time.Since(start) escapes to heap
+./request_logger.go:45:5: ws.Size escapes to heap
+./request_logger.go:46:5: humanize.Bytes(uint64(ws.Size)) escapes to heap
+./request_logger.go:47:5: ws.Status escapes to heap
+./request_logger.go:41:29: logrus.Fields literal escapes to heap
+./request_logger.go:49:34: req.URL.String() escapes to heap
+./resource.go:54:32: error(&"errors".errorString literal) escapes to heap
+./resource.go:54:32: &"errors".errorString literal escapes to heap
+./resource.go:59:32: error(&"errors".errorString literal) escapes to heap
+./resource.go:59:32: &"errors".errorString literal escapes to heap
+./resource.go:64:32: error(&"errors".errorString literal) escapes to heap
+./resource.go:64:32: &"errors".errorString literal escapes to heap
+./resource.go:69:32: error(&"errors".errorString literal) escapes to heap
+./resource.go:69:32: &"errors".errorString literal escapes to heap
+./resource.go:74:32: error(&"errors".errorString literal) escapes to heap
+./resource.go:74:32: &"errors".errorString literal escapes to heap
+./resource.go:79:32: error(&"errors".errorString literal) escapes to heap
+./resource.go:79:32: &"errors".errorString literal escapes to heap
+./resource.go:84:32: error(&"errors".errorString literal) escapes to heap
+./resource.go:84:32: &"errors".errorString literal escapes to heap
+./response.go:29:22: b escapes to heap
+./response.go:38:35: error(&"github.com/pkg/errors".withStack literal) escapes to heap
+./response.go:38:35: &"github.com/pkg/errors".withStack literal escapes to heap
+./response.go:38:46: error(&"github.com/pkg/errors".fundamental literal) escapes to heap
+./response.go:38:46: &"github.com/pkg/errors".fundamental literal escapes to heap
+./route.go:41:28: ri escapes to heap
+./route.go:42:15: string(b) escapes to heap
+./route.go:50:23: ri escapes to heap
+./route.go:50:38: ... argument escapes to heap
+./route.go:68:15: name + "Path" escapes to heap
+./route.go:73:48: ri escapes to heap
+./router.go:255:33: []string literal escapes to heap
+./router.go:208:15: h escapes to heap
+./router.go:218:30: r escapes to heap
+./router.go:215:3: &RouteInfo literal escapes to heap
+./router.go:215:24: []string literal escapes to heap
+./router.go:218:46: ... argument escapes to heap
+./router.go:223:11: routes escapes to heap
+./router.go:53:21: func literal escapes to heap
+./router.go:53:21: func literal escapes to heap
+./wrappers.go:8:9: func literal escapes to heap
+./wrappers.go:8:9: func literal escapes to heap
+./router.go:92:25: http.HandlerFunc(func literal) escapes to heap
+./router.go:92:26: func literal escapes to heap
+./router.go:92:26: func literal escapes to heap
+./router.go:91:24: http.Handler(&http.fileHandler literal) escapes to heap
+./router.go:91:24: &http.fileHandler literal escapes to heap
+./router.go:96:52: r.URL.Path escapes to heap
+./router.go:126:23: r escapes to heap
+./router.go:132:42: rt.PkgPath() escapes to heap
+./router.go:132:53: rt.Name() escapes to heap
+./router.go:146:40: "List" escapes to heap
+./router.go:146:14: r.List escapes to heap
+./router.go:146:14: r.List escapes to heap
+./router.go:147:12: r.List escapes to heap
+./router.go:148:39: "New" escapes to heap
+./router.go:148:14: r.New escapes to heap
+./router.go:148:14: r.New escapes to heap
+./router.go:149:30: r.New escapes to heap
+./router.go:150:40: "Show" escapes to heap
+./router.go:150:14: r.Show escapes to heap
+./router.go:150:14: r.Show escapes to heap
+./router.go:145:37: "{" + paramName + "}" escapes to heap
+./router.go:151:27: r.Show escapes to heap
+./router.go:152:40: "Edit" escapes to heap
+./router.go:152:14: r.Edit escapes to heap
+./router.go:152:14: r.Edit escapes to heap
+./router.go:153:35: r.Edit escapes to heap
+./router.go:154:42: "Create" escapes to heap
+./router.go:154:14: r.Create escapes to heap
+./router.go:154:14: r.Create escapes to heap
+./router.go:155:13: r.Create escapes to heap
+./router.go:156:42: "Update" escapes to heap
+./router.go:156:14: r.Update escapes to heap
+./router.go:156:14: r.Update escapes to heap
+./router.go:157:27: r.Update escapes to heap
+./router.go:158:43: "Destroy" escapes to heap
+./router.go:158:14: r.Destroy escapes to heap
+./router.go:158:14: r.Destroy escapes to heap
+./router.go:159:30: r.Destroy escapes to heap
+./server.go:89:15: err escapes to heap
+./server.go:21:54: a.Options.Host escapes to heap
+./server.go:29:17: tcp escapes to heap
+./server.go:31:17: servers.New() escapes to heap
+./server.go:31:35: &servers.Simple literal escapes to heap
+./server.go:31:35: &http.Server literal escapes to heap
+./server.go:38:5: func literal escapes to heap
+./server.go:38:5: func literal escapes to heap
+./server.go:65:6: func literal escapes to heap
+./server.go:65:6: func literal escapes to heap
+./server.go:74:6: func literal escapes to heap
+./server.go:74:6: func literal escapes to heap
+./server.go:41:15: "Shutting down application" escapes to heap
+./server.go:44:16: err escapes to heap
+./server.go:49:16: "Shutting down worker" escapes to heap
+./server.go:51:17: err escapes to heap
+./server.go:57:17: err escapes to heap
+./server.go:75:21: a escapes to heap
+./server.go:27:28: error(&"github.com/pkg/errors".withStack literal) escapes to heap
+./server.go:27:28: &"github.com/pkg/errors".withStack literal escapes to heap
+./server.go:130:22: http.Handler(http.HandlerFunc(func literal)) escapes to heap
+./server.go:130:40: func literal escapes to heap
+./server.go:130:40: func literal escapes to heap
+./server.go:102:31: ws escapes to heap
+./server.go:97:3: &Response literal escapes to heap
+./server.go:106:6: a.router escapes to heap
+./server.go:110:13: ws escapes to heap
+./session.go:69:9: func literal escapes to heap
+./session.go:69:9: func literal escapes to heap
+./session.go:72:27: error(&"github.com/pkg/errors".withStack literal) escapes to heap
+./session.go:72:27: &"github.com/pkg/errors".withStack literal escapes to heap
+./wrappers.go:17:20: h escapes to heap
+<autogenerated>:1: ri escapes to heap
+<autogenerated>:1: string(b) escapes to heap
+<autogenerated>:1: []string literal escapes to heap
+<autogenerated>:1: logrusWrapper literal escapes to heap
+<autogenerated>:1: l.FieldLogger.WithField() escapes to heap
+<autogenerated>:1: logrusWrapper literal escapes to heap
+<autogenerated>:1: l.FieldLogger.WithFields(m) escapes to heap
+<autogenerated>:1: error(&"errors".errorString literal) escapes to heap
+<autogenerated>:1: &"errors".errorString literal escapes to heap
+<autogenerated>:1: error(&"errors".errorString literal) escapes to heap
+<autogenerated>:1: &"errors".errorString literal escapes to heap
+<autogenerated>:1: error(&"errors".errorString literal) escapes to heap
+<autogenerated>:1: &"errors".errorString literal escapes to heap
+<autogenerated>:1: error(&"errors".errorString literal) escapes to heap
+<autogenerated>:1: &"errors".errorString literal escapes to heap
+<autogenerated>:1: error(&"errors".errorString literal) escapes to heap
+<autogenerated>:1: &"errors".errorString literal escapes to heap
+<autogenerated>:1: error(&"errors".errorString literal) escapes to heap
+<autogenerated>:1: &"errors".errorString literal escapes to heap
+<autogenerated>:1: error(&"errors".errorString literal) escapes to heap
+<autogenerated>:1: &"errors".errorString literal escapes to heap

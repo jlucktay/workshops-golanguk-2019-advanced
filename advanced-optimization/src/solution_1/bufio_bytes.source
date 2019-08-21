@@ -1,0 +1,30 @@
+  Total:     1239876    2386901 (flat, cum)   100%
+      9            .          .            
+     10            .          .           // section: count 
+     11            .          .           // Count will return the total words and distinct words in a text file 
+     12            .          .           func CountBufioBytes(rd io.Reader) (int, int, error) { 
+     13            .          .           	// wrap the reader in a buffer 
+     14            .        128           	br := bufio.NewReader(rd) 
+     15            .          .            
+     16            .          .           	var found bool 
+     17            .          .           	words := map[string]int{} 
+     18            .          .           	word := []rune{} 
+     19            .          .           	count := 0 
+     20            .          .            
+     21            .          .           	for { 
+     22            .    1146897           		r, err := readRune(br) 
+     23            .          .           		if err == io.EOF { 
+     24            .          .           			break 
+     25            .          .           		} 
+     26            .          .           		if err != nil { 
+     27            .          .           			return -1, -1, fmt.Errorf("error reading: %v", err) 
+     28            .          .           		} 
+     29            .          .            
+     30            .          .           		if unicode.IsSpace(r) && found { 
+     31            .          .           			found = false 
+     32      1239876    1239876           			words[string(word)] = words[string(word)] + 1 
+     33            .          .           			word = word[:0] // clear outheslice 
+     34            .          .           			count++ 
+     35            .          .           		} 
+     36            .          .           		found = unicode.IsLetter(r) 
+     37            .          .           		if found { 
