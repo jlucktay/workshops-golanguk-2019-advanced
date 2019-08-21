@@ -99,3 +99,13 @@ func BenchmarkAll(b *testing.B) {
 		})
 	}
 }
+
+/*
+$ go test -bench=BenchmarkAll -benchmem
+goos: darwin
+goarch: amd64
+BenchmarkAll/WithPlus-4                 10000000               114 ns/op              64 B/op          1 allocs/op
+BenchmarkAll/WithSprintf-4               2000000               610 ns/op             224 B/op         11 allocs/op
+BenchmarkAll/WithBuffer-4               10000000               116 ns/op             128 B/op          2 allocs/op
+BenchmarkAll/WithStringBuilder-4        10000000               155 ns/op             120 B/op          4 allocs/op
+*/
