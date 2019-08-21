@@ -7,8 +7,8 @@ repos:
 - repo: git://github.com/pre-commit/pre-commit-hooks
   rev: v2.3.0
   hooks:
-  # Prevent giant files from being committed
-  - id: check-added-large-files
+  # # Prevent giant files from being committed
+  # - id: check-added-large-files
   # Forbid files which have a UTF-8 byte-order marker
   - id: check-byte-order-marker
   # Check for files that would conflict in case-insensitive filesystems
