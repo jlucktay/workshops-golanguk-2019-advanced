@@ -3,6 +3,12 @@
 package main
 
 import (
+	"fmt"
+	"io/ioutil"
+	"os"
+	"path/filepath"
+	"time"
+
 	"github.com/magefile/mage/sh"
 )
 
@@ -20,25 +26,37 @@ const srcDir = "./src/"
 // 	return cmd.Run()
 // }
 
-// // Clean up after yourself
-// func Clean() {
-// 	fmt.Println("Cleaning...")
-// 	os.RemoveAll("MyApp")
-// }
+// Clean up various generated output files.
+func Clean() error {
+	matches, errGlob := filepath.Glob("bench.*.log")
+	if errGlob != nil {
+		return errGlob
+	}
 
+	for _, match := range matches {
+		if errRemove := os.Remove(match); errRemove != nil {
+			return errRemove
+		}
+	}
+
+	return nil
+}
+
+// Runs all benchmarks with memory allocation statistics.
 // go test -benchmem -bench=.
 func Benchmark() error {
 	return sh.RunV("go", "test", srcDir, "-benchmem", "-bench=.")
 }
 
+// Runs all benchmarks with memory allocation statistics 10 times, and saves the output.
 // go test -benchmem -bench=. -count=10 > old.bench
-func Benchstat() error {
-	_, err := sh.Output("go", "test", srcDir, "-benchmem", "-bench=.", "-count=10")
+func SaveBench() error {
+	out, err := sh.Output("go", "test", srcDir, "-benchmem", "-bench=.", "-count=10")
 	if err != nil {
 		return err
 	}
 
-	// sh.
-
-	return nil
+	now := time.Now().Format("20060102.150405.000000-0700")
+	benchFile := fmt.Sprintf("bench.%s.log", now)
+	return ioutil.WriteFile(benchFile, []byte(out), 0644)
 }
