@@ -1,0 +1,3 @@
+bench.*.log
+cpu.*.pprof
+mem.*.pprof
