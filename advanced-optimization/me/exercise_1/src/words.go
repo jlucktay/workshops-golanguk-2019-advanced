@@ -1,6 +1,7 @@
 package words
 
 import (
+	"bufio"
 	"fmt"
 	"io"
 	"unicode"
@@ -13,8 +14,10 @@ func Count(rd io.Reader) (int, int, error) {
 	word := ""
 	count := 0
 
+	br := bufio.NewReader(rd)
+
 	for {
-		r, err := readRune(rd)
+		r, err := readRune(br)
 		if err == io.EOF {
 			break
 		}
